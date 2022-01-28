@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Dashboard from "./../components/dashboard/Dashboard";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Dashboard</h1>
+        <Dashboard />
       </main>
     </div>
   );

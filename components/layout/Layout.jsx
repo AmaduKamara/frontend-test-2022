@@ -1,11 +1,11 @@
 import React from "react";
-import MainSideBar from "../sidebar/SideBarMenus";
+import SideBarMenus from "../sidebar/SideBarMenus";
 
 const Layout = ({ children }) => {
   return (
-    <div>
-      <MainSideBar />
-      <div>
+    <div className="flex">
+      <SideBarMenus />
+      <div className="w-full">
         <div>{children}</div>
       </div>
     </div>
