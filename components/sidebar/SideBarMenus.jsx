@@ -2,16 +2,87 @@ import React from "react";
 import Menu from "./Menu";
 
 const MainSideBar = () => {
-  const menuLinks = [{ id: 1, title: "Home", icon: "home" }];
+  const appLinks = [
+    { id: 1, title: "Home", icon: "" },
+    { id: 2, title: "Notifications", icon: "" },
+    { id: 3, title: "Messages", icon: "" },
+    { id: 4, title: "Settings", icon: "" },
+    { id: 5, title: "Templates", icon: "" },
+    { id: 5, title: "Reporting", icon: "" },
+  ];
+  const clientLinks = [
+    { id: 1, title: "My Clients", icon: "" },
+    { id: 2, title: "New Client", icon: "" },
+  ];
+  const invoicingLinks = [
+    { id: 1, title: "My Invoices", icon: "" },
+    { id: 2, title: "New Invoices", icon: "" },
+  ];
+  const filesLinks = [
+    { id: 1, title: "My Files", icon: "" },
+    { id: 2, title: "Upload", icon: "" },
+  ];
+  const scheduleLinks = [
+    { id: 1, title: "My Schedule", icon: "" },
+    { id: 2, title: "New Session", icon: "" },
+  ];
+  const coursesLinks = [
+    { id: 1, title: "My Courses", icon: "" },
+    { id: 2, title: "New Course", icon: "" },
+  ];
+
   return (
     <div className="w-72 bg-white h-screen border border-r-2">
-      <Menu />
-      <Menu />
-      <Menu />
-      <Menu />
-      <Menu />
-      <Menu />
-      <Menu />
+      <div className="flex justify-center mt-4 mb-4">
+        <input
+          type="text"
+          placeholder="Search"
+          className="py-2 px-3 border shadow rounded"
+        />
+      </div>
+      <div className="py-2 px-4">
+        {appLinks.map((link) => (
+          <Menu key={link.id} title={link.title} icon={link.icon} />
+        ))}
+      </div>
+      <div className="py-2 px-4 mt-2">
+        <p className="uppercase ml-2 text-gray-400">Clients</p>
+        {clientLinks.map((link) => (
+          <Menu key={link.id} title={link.title} icon={link.icon} />
+        ))}
+      </div>
+      <div className="py-2 px-4 mt-2">
+        <p className="uppercase ml-2 text-gray-400">Invoicing</p>
+        {invoicingLinks.map((link) => (
+          <Menu key={link.id} title={link.title} icon={link.icon} />
+        ))}
+      </div>
+      <div className="py-2 px-4 mt-2">
+        <p className="uppercase ml-2 text-gray-400">Files</p>
+        {filesLinks.map((link) => (
+          <Menu key={link.id} title={link.title} icon={link.icon} />
+        ))}
+      </div>
+      <div className="py-2 px-4 mt-2">
+        <p className="uppercase ml-2 text-gray-400">Schedule</p>
+        {scheduleLinks.map((link) => (
+          <Menu key={link.id} title={link.title} icon={link.icon} />
+        ))}
+      </div>
+      <div className="py-2 px-4 mt-2">
+        <div className="flex justify-between items-center">
+          <p className="uppercase ml-2 text-gray-400">Courses</p>
+          <a href="#" className="text-blue-500 text-sm">
+            Coming Soon
+          </a>
+        </div>
+        {coursesLinks.map((link) => (
+          <Menu key={link.id} title={link.title} icon={link.icon} />
+        ))}
+      </div>
+      <div className="py-2 px-4 mt-2">
+        <p className="uppercase ml-2 text-gray-500">Help</p>
+      </div>
     </div>
   );
 };

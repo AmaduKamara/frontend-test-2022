@@ -1,9 +1,14 @@
 import React from "react";
+import { BiHomeAlt } from "react-icons/bi";
 
-const Menu = () => {
+const Menu = ({ title, icon }) => {
   return (
-    <div className="py-2 px-4">
-      <p>Single Menu Link</p>
+    <div className="my-4">
+      <p className="flex items-center">
+        {" "}
+        <BiHomeAlt className="mr-3 text-gray-500 text-2xl" />{" "}
+        <span className="text-lg text-gray-600">{title}</span>{" "}
+      </p>
     </div>
   );
 };
