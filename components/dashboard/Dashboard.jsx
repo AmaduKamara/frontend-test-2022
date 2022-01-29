@@ -1,5 +1,6 @@
 import React from "react";
 import DashboardHeader from "./DashboardHeader";
+import Breeds from "./Breeds";
 import { BsArrowUp } from "react-icons/bs";
 import LineChart from "./LineChart";
 import PieChart from "./PieChart";
@@ -50,6 +51,13 @@ const Dashboard = () => {
           </div>
           <PieChart />
         </div>
+      </div>
+      <div className="mt-5 mx-3">
+        {/* Breeds Section */}
+        <div className="mt-10 mb-4 ml-2">
+          <h3 className="text-2xl font-semibold">Breeds(24)</h3>
+        </div>
+        <Breeds />
       </div>
     </div>
   );
