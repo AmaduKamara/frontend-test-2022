@@ -32,12 +32,12 @@ const MainSideBar = () => {
   ];
 
   return (
-    <div className="w-72 bg-white h-screen border border-r-2">
+    <div className="w-96 bg-white h-screen border border-r-2">
       <div className="flex justify-center mt-4 mb-4">
         <input
           type="text"
           placeholder="Search"
-          className="py-2 px-3 border shadow rounded"
+          className="py-2 px-3 border shadow rounded w-full mx-4 focus:outline-blue-500"
         />
       </div>
       <div className="py-2 px-4">
