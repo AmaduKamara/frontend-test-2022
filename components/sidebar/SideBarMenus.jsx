@@ -3,12 +3,12 @@ import Menu from "./Menu";
 
 const MainSideBar = () => {
   const appLinks = [
-    { id: 1, title: "Home", icon: "" },
-    { id: 2, title: "Notifications", icon: "" },
-    { id: 3, title: "Messages", icon: "" },
-    { id: 4, title: "Settings", icon: "" },
-    { id: 5, title: "Templates", icon: "" },
-    { id: 5, title: "Reporting", icon: "" },
+    { id: 1, title: "Home", icon: "", count: "" },
+    { id: 2, title: "Notifications", icon: "", count: "4" },
+    { id: 3, title: "Messages", icon: "", count: "24" },
+    { id: 4, title: "Settings", icon: "", count: "" },
+    { id: 5, title: "Templates", icon: "", count: "" },
+    { id: 5, title: "Reporting", icon: "", count: "" },
   ];
   const clientLinks = [
     { id: 1, title: "My Clients", icon: "" },
@@ -42,7 +42,12 @@ const MainSideBar = () => {
       </div>
       <div className="py-2 px-4">
         {appLinks.map((link) => (
-          <Menu key={link.id} title={link.title} icon={link.icon} />
+          <Menu
+            key={link.id}
+            title={link.title}
+            icon={link.icon}
+            count={link.count}
+          />
         ))}
       </div>
       <div className="py-2 px-4 mt-2">
