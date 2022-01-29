@@ -25,3 +25,7 @@ a {
 ul li {
   list-style: none;
 }
+
+.active{
+  border-left: 2px solid #3366f1;
+}
