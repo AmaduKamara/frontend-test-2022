@@ -5,7 +5,7 @@ import { MdOutlineShowChart } from "react-icons/md";
 const Breed = () => {
   return (
     <div>
-      <div className="p-3 border rounded-md m-3 flex justify-between">
+      <div className="p-3 border rounded-md m-3 flex justify-between bg-white">
         <div className="flex">
           <div className="w-16 h-16 bg-blue-200 flex items-center justify-center rounded-full">
             <GiSittingDog className="text-5xl text-white" />

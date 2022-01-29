@@ -3,7 +3,7 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="bg-gray-100">
+    <div>
       <Layout>
         <Component {...pageProps} />
       </Layout>

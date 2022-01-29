@@ -10,7 +10,7 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  background-color: #FEFEFF;
+  background-color: #f9f9f9;
 }
 
 a {
@@ -24,8 +24,4 @@ a {
 
 ul li {
   list-style: none;
-}
-
-.active{
-  border-left: 2px solid #3366f1;
 }
