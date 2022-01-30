@@ -20,8 +20,8 @@ const Dashboard = () => {
               <p className="text-xl font-semibold mt-2">12000</p>
             </div>
           </div>
-          <div className="flex mt-5 bg-white">
-            <div className="border rounded-md p-4 w-full flex mr-4">
+          <div className="flex mt-5">
+            <div className="border rounded-md p-4 w-full flex mr-4 bg-white">
               <span className="flex justify-center items-center text-center w-10 h-10 rounded-full">
                 <BsArrowUp className="text-green-500 text-xl" />
               </span>
